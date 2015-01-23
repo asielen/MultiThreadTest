@@ -1,3 +1,4 @@
+import import_example2
 import import_example
 import_example.init()
 
