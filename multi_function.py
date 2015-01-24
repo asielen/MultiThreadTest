@@ -1,7 +1,6 @@
-__author__ = 'andrew.sielen'
-
 import import_example
-import_example.init()
+if __name__ == "__main__": import_example.init()
 
 def f(x):
-    return x*x
+    import_example.log(x)
+    return x+x

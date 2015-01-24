@@ -1,15 +1,6 @@
-__author__ = 'andrew.sielen'
 
-def run_once(f):
-    def wrapper(*args, **kwargs):
-        if not wrapper.has_run:
-            wrapper.has_run = True
-            return f(*args, **kwargs)
-    wrapper.has_run = False
-    return wrapper
-
-
-@run_once
 def init():
     print("I Was Initialized")
 
+def log(x):
+    print("LOG {}: {}".format(__name__, x))
